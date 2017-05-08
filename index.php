@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="indexstyle.css">
+        <title>Index</title>
     </head>
     <body>
-        <div class="card">
-            <img src="img_avatar.png" alt="Domenico" style="width:100%">
-            <div class="container">
-                <h4><b>Nome Cognome</b></h4> 
-                <p>Titolo tesina</p> 
-            </div>
+        <div id = "container">
+			<div id = "header"></div>
+			
+			<div id = "slider"></div>
+			<div id = "data"></div>
+			<div style = "clear: both;"></div>
+			
+			<div id = "dots"></div>
+			<div id = "button"></div>
+			<div style = "clear: both;"></div>
+			
+			<div id = "footer"></div>
         </div>  
     </body>
 </html>
