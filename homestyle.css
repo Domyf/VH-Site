@@ -7,6 +7,9 @@ body {
 .topnav {
     overflow: hidden;
     background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
 }
 
 .topnav a {
@@ -58,7 +61,8 @@ body {
 .page-content {
     max-width: 1080px;
     margin: auto;
-    padding: 16px 30px;
+    margin-top: 60px;
+    padding: 10px 28px;
     /**background-image: url("img/backgrounds/soft_wallpaper.png");*/
     background-color: #FAFAFA;
 }
