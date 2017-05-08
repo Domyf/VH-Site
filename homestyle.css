@@ -1,6 +1,6 @@
 body {
     margin-top: 0;
-    background-image: url("stardust.png");
+    background-image: url("img/backgrounds/background index.png");
     background-color: black;
 }
 
@@ -10,7 +10,7 @@ body {
     height: 1000px;
     margin-right: auto;
     margin-left: auto;
-    background-image: url("ep_naturalwhite.png");
+    background-image: url("img/backgrounds/soft_wallpaper.png");
     background-color: white;
     padding: 10px;
 }
