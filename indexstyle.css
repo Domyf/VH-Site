@@ -10,8 +10,6 @@ body
 #header
 {
 	font-size: 48px;
-	margin-top: 10px;
-	padding-top: 15px;
 	padding-bottom: 15px;
 	text-align: center;
 	background-color: blue;
@@ -22,22 +20,8 @@ body
 	margin-top: 30px;
 	margin-left: 50px;
 	width: 640px;
-	height: 320px;;
-	background-image: url("img/slide2.jpg");
-	background-color: green;
+	height: 320px;
 	float: left;
-}
-
-#dots
-{
-	margin-left: 50px;
-	margin-top: 20px;
-	margin-bottom: 50px;
-	width: 640px;
-	height: 75px;
-	float: left;
-	color: white;
-	text-align: center;
 }
 
 #data
@@ -47,6 +31,13 @@ body
 	color: white;
 	font-size: 32px;
 	float: right;
+}
+
+#clock
+{
+	background-color: yellow;
+	width: 50px;
+	height: 50px;
 }
 
 #button
