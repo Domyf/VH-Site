@@ -102,10 +102,12 @@ body {
 
 /* Car info */
 .car-item {
+    width: 482px;
     height: 250px;
     margin-left: 28px;
     margin-right: 28px;
     margin-bottom: 20px;
+    float: left;
     border-radius: 8px 50px 8px 8px;
     -moz-border-radius: 8px 50px 8px 8px;
     -webkit-border-radius: 8px 50px 8px 8px;
@@ -125,18 +127,15 @@ body {
 .car-img {
     height: 100%;
     width: 350px;
-    background: brown;
     float: left;
+    
     border-radius: 8px 0 8px 0;
-	-moz-border-radius: 8px 0 8px 0;
-	-webkit-border-radius: 8px 0 0 8px; 
+    -moz-border-radius: 8px 0 8px 0;
+    -webkit-border-radius: 8px 0 0 8px; 
 }
 
 .car-descr {
     height: 100%;
-    width: 638px;
-    float: left;
-    margin-left: 34px;
 }
 
 /* Bottone noleggia */
@@ -155,11 +154,9 @@ body {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 
-.car-list-btn
+.car-item-btn
 {
-	float: right;
-	margin-right: 25px;
-	
+    margin-top: 40px;
 }
 
 /** Bottone Noleggia on focus */

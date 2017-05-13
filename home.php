@@ -26,23 +26,105 @@
         <div class="page-content horizontal-centered">
             <div class="car-item">
                 <img class="car-img" src="img/auto/DF486TY.jpg">
-                
-                <div class="car-descr">
-              		<div class = "info-auto">Marca: Renault</div>
-              		<div class = "info-auto">Madello: Clio</div>
-              		
-              		<div class = "prezzo">
-              			Costo giornaliero: €25
-              		</div>
-              		
-              		<div class = "div-btn">
-              			<input type="button" value="Noleggia" class="btn-noleggia car-list-btn">
-              		</div>
-              		<div style="clear:both;"></div>
+                <div class="car-descr" style="text-align: center;">
+                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
+                    <div>Renault</div>
+                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
+                    <div>Clio</div>
+                    <div style="margin-top: 40px;">€25/giorno</div>
+                    <input type="button" value="Noleggia" class="btn-noleggia car-item-btn">
+                </div>
+            </div>
+            <div class="car-item">
+                <img class="car-img" src="img/auto/DF486TY.jpg">
+                <div class="car-descr" style="text-align: center;">
+                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
+                    <div>Renault</div>
+                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
+                    <div>Clio</div>
+                    <div style="margin-top: 40px;">€25/giorno</div>
+                    <input type="button" value="Noleggia" class="btn-noleggia car-item-btn">
+                </div>
+            </div>
+            <div class="car-item">
+                <img class="car-img" src="img/auto/DF486TY.jpg">
+                <div class="car-descr" style="text-align: center;">
+                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
+                    <div>Renault</div>
+                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
+                    <div>Clio</div>
+                    <div style="margin-top: 40px;">€25/giorno</div>
+                    <input type="button" value="Noleggia" class="btn-noleggia car-item-btn">
+                </div>
+            </div>
+            <div class="car-item">
+                <img class="car-img" src="img/auto/DF486TY.jpg">
+                <div class="car-descr" style="text-align: center;">
+                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
+                    <div>Renault</div>
+                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
+                    <div>Clio</div>
+                    <div style="margin-top: 40px;">€25/giorno</div>
+                    <input type="button" value="Noleggia" class="btn-noleggia car-item-btn">
+                </div>
+            </div>
+            <div class="car-item">
+                <img class="car-img" src="img/auto/DF486TY.jpg">
+                <div class="car-descr" style="text-align: center;">
+                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
+                    <div>Renault</div>
+                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
+                    <div>Clio</div>
+                    <div style="margin-top: 40px;">€25/giorno</div>
+                    <input type="button" value="Noleggia" class="btn-noleggia car-item-btn">
+                </div>
+            </div>
+            <div class="car-item">
+                <img class="car-img" src="img/auto/DF486TY.jpg">
+                <div class="car-descr" style="text-align: center;">
+                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
+                    <div>Renault</div>
+                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
+                    <div>Clio</div>
+                    <div style="margin-top: 40px;">€25/giorno</div>
+                    <input type="button" value="Noleggia" class="btn-noleggia car-item-btn">
+                </div>
+            </div>
+            <div class="car-item">
+                <img class="car-img" src="img/auto/DF486TY.jpg">
+                <div class="car-descr" style="text-align: center;">
+                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
+                    <div>Renault</div>
+                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
+                    <div>Clio</div>
+                    <div style="margin-top: 40px;">€25/giorno</div>
+                    <input type="button" value="Noleggia" class="btn-noleggia car-item-btn">
+                </div>
+            </div>
+            <div class="car-item">
+                <img class="car-img" src="img/auto/DF486TY.jpg">
+                <div class="car-descr" style="text-align: center;">
+                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
+                    <div>Renault</div>
+                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
+                    <div>Clio</div>
+                    <div style="margin-top: 40px;">€25/giorno</div>
+                    <input type="button" value="Noleggia" class="btn-noleggia car-item-btn">
+                </div>
+            </div>
+            <div class="car-item">
+                <img class="car-img" src="img/auto/DF486TY.jpg">
+                <div class="car-descr" style="text-align: center;">
+                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
+                    <div>Renault</div>
+                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
+                    <div>Clio</div>
+                    <div style="margin-top: 40px;">€25/giorno</div>
+                    <input type="button" value="Noleggia" class="btn-noleggia car-item-btn">
+                </div>
             </div>
             <div style="clear:both;"></div>
         </div>
-        
         <div class="footer"></div>
         <script>
             function showMenu() {
