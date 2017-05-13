@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
 }
 
 .topnav {
@@ -11,6 +13,7 @@ body {
 }
 
 .topnav a {
+    outline: none;
     float: left;
     display: block;
     color: white;
@@ -57,7 +60,7 @@ body {
 
 /* Contenuto pagina */
 .page-content {
-	padding-top: 50px;
+    padding-top: 50px;
     /*padding: 10px 28px;*/
     background-color: white;
 }
@@ -100,8 +103,23 @@ body {
 /* Car info */
 .car-item {
     height: 250px;
-    padding: 0 28px 0 28px;
+    margin-left: 28px;
+    margin-right: 28px;
     margin-bottom: 20px;
+    border-radius: 8px 50px 8px 8px;
+    -moz-border-radius: 8px 50px 8px 8px;
+    -webkit-border-radius: 8px 50px 8px 8px;
+    border: 1px solid rgba(0,0,0,0.15);
+    
+    -webkit-box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.20);
+    -moz-box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.20);
+    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.20);
+}
+
+.car-item:hover {
+    -webkit-box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.32);
+    box-shadow: 0px 6px 10px 0 rgba(0,0,0,0.26);
 }
 
 .car-img {
@@ -109,10 +127,9 @@ body {
     width: 350px;
     background: brown;
     float: left;
-    
-    -webkit-box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.32);
-	-moz-box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.32);
-	box-shadow: 0px 3px 16px 2px rgba(0,0,0,0.32);
+    border-radius: 8px 0 8px 0;
+	-moz-border-radius: 8px 0 8px 0;
+	-webkit-border-radius: 8px 0 0 8px; 
 }
 
 .car-descr {
@@ -120,9 +137,37 @@ body {
     width: 638px;
     float: left;
     margin-left: 34px;
-    
-    border-radius: 20px 89px 20px 20px;
-	-moz-border-radius: 20px 89px 20px 20px;
-	-webkit-border-radius: 20px 89px 20px 20px;
-	border: 1px solid #000000;
+}
+
+/* Bottone noleggia */
+.btn-noleggia {
+    height: 36px;
+    width: 88px;
+    padding: 0 16px 0 16px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    background-color: #43A047;
+    border-width: 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+/** Bottone Noleggia on focus */
+.btn-noleggia:focus {
+    outline: none;
+    border-width: 0;
+}
+
+/** Bottone Noleggia on hover */
+.btn-noleggia:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.15), 0 2px 5px 0 rgba(0,0,0,0.4);
+}
+
+/** Bottone Noleggia premuto */
+.btn-noleggia:active {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 8px 2px rgba(0,0,0,0.15), 0 2px 5px 0 rgba(0,0,0,0.4);
 }

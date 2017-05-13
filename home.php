@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="homestyle.css">
-        <title>Home</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <title>Car Sharing</title>
     </head>
     <body onload="cambia_slide()">
         <div style="background: black; width: 100%;">
@@ -24,30 +25,14 @@
         
         <div class="page-content horizontal-centered">
             <div class="car-item">
-                <img class="car-img">
-                <div class="car-descr">
-                    Testo
-                </div>
-            </div>
-            
-            <div class="car-item">
-                <img class="car-img">
-                <div class="car-descr">
-                    Testo
-                </div>
-            </div>
-            
-            <div class="car-item">
-                <img class="car-img">
-                <div class="car-descr">
-                    Testo
-                </div>
-            </div>
-            
-            <div class="car-item">
                 <img class="car-img" src="img/auto/DF486TY.jpg">
-                <div class="car-descr"></div>
-                <div style = "clear:both;></div>
+                <div class="car-descr">
+                    <div>Marca: Renault</div>
+                    <div>Modello: Clio</div>
+                    <input type="button" value="Noleggia" class="btn-noleggia">
+                    <p style="font-size:32px;">Costo giornaliero: €25</p>
+                </div>
+                <div style="clear:both;"></div>
             </div>
         </div>
         
