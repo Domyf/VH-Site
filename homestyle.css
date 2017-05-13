@@ -1,13 +1,12 @@
 body {
     margin: 0;
-    /**background-image: url("img/backgrounds/background index.png");*/
     background-color: #F5F5F5;
 }
 
 .topnav {
     overflow: hidden;
     background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
+    /* position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 }
@@ -59,12 +58,14 @@ body {
 
 /* Contenuto pagina */
 .page-content {
-    max-width: 1080px;
-    margin: auto;
     margin-top: 60px;
     padding: 10px 28px;
-    /**background-image: url("img/backgrounds/soft_wallpaper.png");*/
-    background-color: #FAFAFA;
+    background-color: white;
+}
+
+.horizontal-centered {
+    max-width: 1080px;
+    margin: auto;
 }
 
 /* Footer pagina */
@@ -72,19 +73,4 @@ body {
     width: 100%;
     height: 40px;
     background-color: black;
-}
-
-.card {
-    background: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    max-width: 400px;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.card-content {
-    padding: 2px 16px;
 }

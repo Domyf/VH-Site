@@ -6,14 +6,16 @@
         <title>Home</title>
     </head>
     <body>
-        <div class="topnav" id="homeTopNav">
+        <div style="background: black; position: fixed; width: 100%;">
+        <div class="topnav horizontal-centered" id="homeTopNav">
             <a href="#home">Home</a>
             <a href="#news">Elemento 2</a>
             <a href="#contact">Elemento 3</a>
             <a href="#about">Elemento 4</a>
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="showMenu()">&#9776;</a>
         </div>
-        <div class="page-content">
+        </div>
+        <div class="page-content horizontal-centered">
             <p>Contenuto pagina</p>
             <p>Contenuto pagina</p>
             <p>Contenuto pagina</p>
@@ -23,13 +25,6 @@
             <p>Contenuto pagina</p>
             <p>Contenuto pagina</p>
             <p>Contenuto pagina</p>
-            <div class="card">
-                <!--<img src="img_avatar.png" alt="Domenico" style="width:100%">-->
-                <div class="card-content">
-                    <h4><b>Nome Cognome</b></h4> 
-                    <p>Titolo Tesina</p> 
-                </div>
-            </div>
             <p>Contenuto pagina</p>
             <p>Contenuto pagina</p>
             <p>Contenuto pagina</p>
