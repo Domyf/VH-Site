@@ -26,14 +26,21 @@
         <div class="page-content horizontal-centered">
             <div class="car-item">
                 <img class="car-img" src="img/auto/DF486TY.jpg">
+                
                 <div class="car-descr">
-                    <div>Marca: Renault</div>
-                    <div>Modello: Clio</div>
-                    <input type="button" value="Noleggia" class="btn-noleggia">
-                    <p style="font-size:32px;">Costo giornaliero: €25</p>
-                </div>
-                <div style="clear:both;"></div>
+              		<div class = "info-auto">Marca: Renault</div>
+              		<div class = "info-auto">Madello: Clio</div>
+              		
+              		<div class = "prezzo">
+              			Costo giornaliero: €25
+              		</div>
+              		
+              		<div class = "div-btn">
+              			<input type="button" value="Noleggia" class="btn-noleggia car-list-btn">
+              		</div>
+              		<div style="clear:both;"></div>
             </div>
+            <div style="clear:both;"></div>
         </div>
         
         <div class="footer"></div>
