@@ -15,6 +15,7 @@
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="showMenu()">&#9776;</a>
         </div>
         </div>
+        
        
         <div id ="foto_auto" class = "horizontal-centered">
         	<div id = "slider"></div>
@@ -28,39 +29,28 @@
                     Testo
                 </div>
             </div>
-        </div>
-        <div class="page-content horizontal-centered">
+            
             <div class="car-item">
                 <img class="car-img">
                 <div class="car-descr">
                     Testo
                 </div>
             </div>
-        </div>
-        <div class="page-content horizontal-centered">
+            
             <div class="car-item">
                 <img class="car-img">
                 <div class="car-descr">
                     Testo
                 </div>
             </div>
-        </div>
-        <div class="page-content horizontal-centered">
+            
             <div class="car-item">
-                <img class="car-img">
-                <div class="car-descr">
-                    Testo
-                </div>
+                <img class="car-img" src="img/auto/DF486TY.jpg">
+                <div class="car-descr"></div>
+                <div style = "clear:both;></div>
             </div>
         </div>
-        <div class="page-content horizontal-centered">
-            <div class="car-item">
-                <img class="car-img">
-                <div class="car-descr">
-                    Testo
-                </div>
-            </div>
-        </div>
+        
         <div class="footer"></div>
         <script>
             function showMenu() {
