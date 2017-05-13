@@ -74,3 +74,25 @@ body {
     height: 40px;
     background-color: black;
 }
+
+/* Slider */
+#foto_auto
+{
+	background-color: red;
+	width: 1080px;
+	height: 400px;
+}
+
+#slider
+{
+	foat: left;
+	max-width: 800px;
+	max-height: 400px;
+}
+
+#desc
+{
+	foat: left;
+	width: 280px;
+	height: 400px;
+}
