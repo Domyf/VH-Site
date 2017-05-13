@@ -15,33 +15,51 @@
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="showMenu()">&#9776;</a>
         </div>
         </div>
-        
+       
         <div id ="foto_auto" class = "horizontal-centered">
         	<div id = "slider"></div>
         	<div id = "desc"></div>
         </div>
         
         <div class="page-content horizontal-centered">
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
-            <p>Contenuto pagina</p>
+            <div class="car-item">
+                <img class="car-img">
+                <div class="car-descr">
+                    Testo
+                </div>
+            </div>
+        </div>
+        <div class="page-content horizontal-centered">
+            <div class="car-item">
+                <img class="car-img">
+                <div class="car-descr">
+                    Testo
+                </div>
+            </div>
+        </div>
+        <div class="page-content horizontal-centered">
+            <div class="car-item">
+                <img class="car-img">
+                <div class="car-descr">
+                    Testo
+                </div>
+            </div>
+        </div>
+        <div class="page-content horizontal-centered">
+            <div class="car-item">
+                <img class="car-img">
+                <div class="car-descr">
+                    Testo
+                </div>
+            </div>
+        </div>
+        <div class="page-content horizontal-centered">
+            <div class="car-item">
+                <img class="car-img">
+                <div class="car-descr">
+                    Testo
+                </div>
+            </div>
         </div>
         <div class="footer"></div>
         <script>

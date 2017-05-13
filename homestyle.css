@@ -58,7 +58,6 @@ body {
 
 /* Contenuto pagina */
 .page-content {
-    margin-top: 60px;
     padding: 10px 28px;
     background-color: white;
 }
@@ -95,4 +94,25 @@ body {
 	foat: left;
 	width: 280px;
 	height: 400px;
+}
+
+/* Car info */
+.car-item {
+    background: aqua; 
+    height: 250px; 
+    margin: 20px 0 0px 0;
+}
+
+.car-img {
+    height: 100%;
+    width: 350px;
+    background: brown;
+    float: left;
+}
+
+.car-descr {
+    background: lightsalmon;
+    height: 100%;
+    width: 730px;
+    float: left;
 }
