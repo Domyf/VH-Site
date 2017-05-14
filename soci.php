@@ -57,10 +57,7 @@
 		                $sql = "SELECT * FROM Noleggi WHERE socio=$socio 
 								AND (SELECT Auto FROM Noleggi WHERE ('$inizio' <= Inizio && '$inizio' >= Fine)";
 		                $result = mysqli_query($conn, $sql);
-		            } else {
-		             	echo 'Nessuna auto nollegiata';
-		            }
-		            if ($result->num_rows > 0) {
+                                if ($result->num_rows > 0) {
 		                    while($row = $result->fetch_assoc()) {
 		                        echo '<div class="car-item">'
 		                        . '<img class="car-img" src="img/auto/'.$row["targa"].'.jpg">'
@@ -73,6 +70,7 @@
 		                        . '<button type="button"class="btn btn-noleggia car-item-btn">Noleggia</button></div></div>';
 		                    }
 		                }
+		            }
         		?>
         	</div>
         <div class="footer footer-registra">Realizzato da Dawid Grzelczyk e Domenico Ferraro</div>
