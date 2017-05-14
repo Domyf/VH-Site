@@ -33,12 +33,7 @@
                 $sql = "SELECT * FROM Auto WHERE Targa NOT IN (SELECT Auto FROM Noleggi WHERE ('$inizio' >= Inizio && '$inizio' <= Fine) OR ('$fine' >= Inizio && '$fine' <= Fine));";
                 $result = mysqli_query($conn, $sql);
             } else {
-                //$sql = "SELECT * FROM Auto WHERE Targa IN (SELECT Auto FROM Noleggi WHERE AutoRestituita = 0);";
                 $sql = "SELECT * FROM Auto";
-                //$sql = 'SELECT * FROM Noleggi WHERE $codfiscale = socio AND ($utenteInizio >= inizio AND $utenteFine <= fine);';
-                //$sql = "UPDATE Noleggi SET autoRestituita = 1 WHERE Auto = $targa && Socio = $codiceFiscale";
-                //Eseguo la query
-                //$result = $conn->query($sql);
                 $result = mysqli_query($conn, $sql);
             }
             if ($result->num_rows > 0) {

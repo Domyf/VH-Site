@@ -21,10 +21,15 @@
         <div id="container">
             <?php 
                 include 'connect.php';
-                
-                if (isset($_POST["CodFis"])) {
+                if (isset($_POST["CodFis"]) && isset($_POST["Targa"])) {
                     $cf = $_POST["CodFis"];
+                    $targa = $_POST["Targa"];
                     echo $cf;
+                    //QUERY D
+                    $sql = "UPDATE noleggi SET auto_restituita = 1 WHERE auto = 'DF486TY' AND socio = 'FM32231566';";
+                    mysqli_query($conn, $sql);
+                } else {
+                    header("Location: restituisci.php");
                 }
             ?>
             <p style="font-size: 24px;">Restituzione eseguita con successo!</p>
