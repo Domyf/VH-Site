@@ -68,3 +68,15 @@ input[type=password]:focus
 	position:fixed !important;
     bottom:0 !important;
 }
+
+/* Soci*/
+#data-input
+{
+	padding: 10px;
+	border: 2px solid #ddd;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	background-color: efefef;
+	color: #666;
+	margin-top: 8px;
+}
