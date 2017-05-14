@@ -28,6 +28,11 @@ body {
     color: black;
 }
 
+.menu-selected {
+    background-color: white;
+    color: black !important;
+}
+
 .topnav .icon {
     display: none;
 }
@@ -60,7 +65,7 @@ body {
 
 /* Contenuto pagina */
 .page-content {
-    padding-top: 50px;
+    padding-top: 20px;
     /*padding: 10px 28px;*/
     background-color: white;
 }
@@ -81,23 +86,25 @@ body {
 #foto_auto
 {
 	margin-top: 15px;
-	background-color: red;
 	width: 1080px;
 	height: 400px;
 }
 
 #slider
 {
-	foat: left;
+	float: left;
 	max-width: 800px;
 	max-height: 400px;
 }
 
 #desc
 {
-	foat: left;
-	width: 280px;
-	height: 400px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.45);
+    color: white;
+    float: left;
+    width: 280px;
+    height: 400px;
 }
 
 /* Car info */
@@ -140,39 +147,67 @@ body {
 
 /* Bottone noleggia */
 .btn-noleggia {
+    color: white;
+    background-color: #43A047;
+}
+
+/* Bottone aggiungi */
+.btn-aggiungi {
+    color: white;
+    background-color: #FFA100;
+    width: 120px !important;
+    margin-left: 10px;
+}
+
+/* Bottone aggiorna */
+.btn-aggiorna {
+    margin-left: 15px;
+    background-color: #FFBA08;
+    color: white;
+}
+
+/* Bottone in generale */
+.btn {
     height: 36px;
     width: 88px;
     padding: 0 16px 0 16px;
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
-    color: white;
     cursor: pointer;
-    background-color: #43A047;
     border-width: 0;
     border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 
+/* Bottone per noleggiare la macchina scelta nella lista */
 .car-item-btn
 {
     margin-top: 40px;
 }
 
 /** Bottone Noleggia on focus */
-.btn-noleggia:focus {
+.btn:focus {
     outline: none;
     border-width: 0;
 }
 
 /** Bottone Noleggia on hover */
-.btn-noleggia:hover {
+.btn:hover {
     cursor: pointer;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.15), 0 2px 5px 0 rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.15), 0 2px 5px 0 rgba(0,0,0,0.4);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.15), 0 2px 5px 0 rgba(0,0,0,0.4);
 }
 
 /** Bottone Noleggia premuto */
-.btn-noleggia:active {
+.btn:active {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 8px 2px rgba(0,0,0,0.15), 0 2px 5px 0 rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 8px 2px rgba(0,0,0,0.15), 0 2px 5px 0 rgba(0,0,0,0.4);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 8px 2px rgba(0,0,0,0.15), 0 2px 5px 0 rgba(0,0,0,0.4);
 }
 
@@ -195,4 +230,25 @@ body {
 {
 	margin-top: 120px;
 	float: right;
+}
+
+.car-list-menu {
+    margin-bottom: 20px;
+}
+
+/* Date picker */
+.datepicker {
+    margin-left: 8px;
+    height: 25px;
+    border-width: 0;
+    font-size: 14px;
+    border-bottom: 2px solid rgba(0,0,0,0.8);
+}
+
+/* Bottone slider */
+.car-slider-btn {
+    height: 72px;
+    width: 176px;
+    font-size: 32px;
+    margin-top: 30px;
 }
