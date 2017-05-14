@@ -7,30 +7,7 @@
         <script src="script.js"></script>
         <title>Car Sharing</title>
     </head>
-    <body onload="cambia_slide()">
-<!--        <div style="background: rgba(255,255,255,0); width: 100%;">
-        <div class="topnav horizontal-centered" id="homeTopNav">
-            <a href="" target="_self" class="menu-selected">Home</a>
-            <a href="" target="_self">Aggiungi</a>
-            <a href="" target="_self">Restituisci</a>
-            <a href="" target="_self">Soci</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="showMenu()">&#9776;</a>
-        </div>
-        </div>-->
-        
-<!--        <div id ="foto_auto" class = "horizontal-centered">
-        	<div id = "slider"></div>
-                <div id = "desc">
-                    <div style="font-size: 28px; margin-top: 20px;">L'auto più costosa</div>
-                    <div style="font-size: 16px; margin-top: 40px;">Marca</div>
-                    <div style="font-size: 26px;">Renault</div>
-                    <div style="font-size: 16px; margin-top: 14px;">Modello</div>
-                    <div style="font-size: 26px;">Clio</div>
-                    <div style="font-size: 30px; margin-top: 30px;">€25/giorno</div>
-                    <button type="button" class="btn btn-noleggia car-slider-btn">Noleggia</button>
-                </div>
-        </div>-->
-        
+    <body>
         <div class="car-list-menu">
             <div class="horizontal-centered">
             <button type="button"class="btn btn-menu btn-selected">Home</button>
