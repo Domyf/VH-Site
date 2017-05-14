@@ -54,7 +54,4 @@ input[type=password]:focus
 }
 
 .footer-registra
-{
-	position:fixed;
-    bottom:0;
-}
+{}

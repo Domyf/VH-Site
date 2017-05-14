@@ -12,14 +12,15 @@
     
 </head>
 <body>
-	<div style="background: black; width: 100%;">
-	<div class="topnav horizontal-centered" id="homeTopNav">
-            <a href="" target="_self" class="menu-selected">Home</a>
-            <a href="" target="_self">Aggiungi</a>
-            <a href="" target="_self">Restituisci</a>
-            <a href="" target="_self">Soci</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="showMenu()">&#9776;</a>
-        </div>
+	<div class="car-list-menu">
+            <div class="horizontal-centered">
+            <button type="button"class="btn btn-menu btn-selected">Home</button>
+            <button type="button"class="btn btn-menu">Aggiungi</button>
+            <button type="button"class="btn btn-menu">Restituisci</button>
+            <button type="button"class="btn btn-menu">Soci</button>
+            <div style="float:right;">
+            </div>
+            </div>
         </div>
 		<div id="contianer">
 			<form action="" method="post">
