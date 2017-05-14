@@ -46,7 +46,7 @@
                         . '<div style="font-size: 12px; margin-top: 10px;">Modello</div>'
                         . '<div>'.$row["modello"].'</div>'
                         . '<div style="margin-top: 40px;">€'.$row["costo_giornaliero"].'/giorno</div>'
-                        . '<form action="noleggia.php" method="post"><input type="submit" value="Noleggia" class="btn btn-noleggia car-item-btn"></form></div></div>';
+                        . '<form action="sceglinoleggio.php?auto='.$row["targa"].'" method="post"><input type="submit" value="Noleggia" class="btn btn-noleggia car-item-btn"></form></div></div>';
                     }
                 }
         ?>

@@ -20,21 +20,32 @@
             </div>
         </div>
         <div id="container">
-            <?php 
+            <?php
                 include 'connect.php';
                 $targa = $_GET["auto"];
-                $codfis = $_POST["codfis"];
-                $inizio = $_POST["start"];
-                $fine = $_POST["end"];
                 //QUERY C
-                if (isset($targa) && isset($codfis) && isset($inizio) && isset($fine)) {
-                    $sql = "INSERT INTO noleggi (`auto`, `socio`, `inizio`, `fine`, `auto_restituita`, `codice_noleggio`) VALUES ($targa, $codfis, $inizio, $fine, 0, NULL)";
-                    $result = mysqli_query($conn, $sql);
-                    echo '<p style ="font-size: 24px;">Auto noleggiata!</p>';
-                } else {
-                    echo '<p style ="font-size: 24px;">Dati immessi errati</p>';
-                }
+                //$sql = "INSERT INTO noleggi (`auto`, `socio`, `inizio`, `fine`, `auto_restituita`, `codice_noleggio`) VALUES ($targa, $codfis, $inizio, $fine, 0, NULL)";
+                //$result = mysqli_query($conn, $sql);
+                echo '<form action="noleggia.php?auto=$targa" method="POST" style="margin-right: 10px; font-size: 18px;">';
             ?>
+                Dal<input type="date" name="start" class="datepicker"><br>
+                Al<input type="date" name="end" class="datepicker">
+                <select name="codfis" value="Codice Fiscale">
+                    <option disabled selected value>Scegli il codice fiscale</option>
+                <?php
+                include 'connect.php';
+                $sql = "SELECT CF FROM Soci";
+                $result = $conn->query($sql);
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        echo '<option value="'.$row["CF"].'">'.$row["CF"].'</option>';
+                    }
+                }
+                $conn->close();
+                ?>
+                </select>
+                <input type="submit" value="Noleggia" class="btn btn-noleggia" style="margin-left: 100px; margin-top: 30px;">
+            </form>
         </div>
         <div class="footer footer-registra">Realizzato da Dawid Grzelczyk e Domenico Ferraro</div>
     </body>
