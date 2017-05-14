@@ -20,8 +20,38 @@
         </div>
         <div id="container">
             <form action="" method="post">
-                <input type="text" name="Targa" placeholder="Targa">
-                <input type="text" name="CodFis" placeholder="Codice Fiscale">
+                <select name="Targa" placeholder="Targa">
+                    <option disabled selected value>Scegli la targa</option>
+                <?php
+                include 'connect.php';
+
+                $sql = "SELECT targa FROM Auto";
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        echo '<option value="'.$row["targa"].'">'.$row["targa"].'</option>';
+                    }
+                }
+                $conn->close();
+                ?>
+                </select>
+                <select name="CodFis" value="Codice Fiscale">
+                    <option disabled selected value>Scegli il codice fiscale</option>
+                <?php
+                include 'connect.php';
+
+                $sql = "SELECT CF FROM Soci";
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        echo '<option value="'.$row["CF"].'">'.$row["CF"].'</option>';
+                    }
+                }
+                $conn->close();
+                ?>
+                </select>
                 <input type="submit" value="Restituisci" class="btn btn-restituisci">
             </form>
         </div>

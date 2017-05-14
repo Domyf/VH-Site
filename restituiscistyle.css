@@ -17,6 +17,7 @@ body
 	box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
 }
 
+select,
 input[type=text],
 input[type=password]
 {
@@ -32,6 +33,7 @@ input[type=password]
 	margin-top: 10px;
 }
 
+select,
 input[type=text]:focus,
 input[type=password]:focus
 {
