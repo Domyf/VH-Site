@@ -11,7 +11,7 @@
         <div class="car-list-menu">
             <div class="horizontal-centered">
                 <a href="home.php"><button type="button"class="btn btn-menu btn-selected">Home</button></a>
-                <a href="noleggia.php"><button type="button"class="btn btn-menu">Aggiungi</button></a>
+                <a href="aggiungi.php"><button type="button"class="btn btn-menu">Aggiungi</button></a>
                 <a href="restituisci.php"><button type="button"class="btn btn-menu">Restituisci</button></a>
                 <a href="soci.php"><button type="button"class="btn btn-menu">Soci</button></a>
             <div style="float:right;">
@@ -46,7 +46,7 @@
                         . '<div style="font-size: 12px; margin-top: 10px;">Modello</div>'
                         . '<div>'.$row["modello"].'</div>'
                         . '<div style="margin-top: 40px;">€'.$row["costo_giornaliero"].'/giorno.</div>'
-                        . '<button type="button"class="btn btn-noleggia car-item-btn">Noleggia</button></div></div>';
+                        . '<form action="noleggia.php" method="post"><input type="submit" value="Noleggia" class="btn btn-noleggia car-item-btn"></form></div></div>';
                     }
                 }
         ?>
