@@ -12,16 +12,14 @@
     
 </head>
 <body>
-	<div class="car-list-menu">
-            <div class="horizontal-centered">
-            <button type="button"class="btn btn-menu btn-selected">Home</button>
-            <button type="button"class="btn btn-menu">Aggiungi</button>
+	<div style = "position: relative;" class="car-list-menu" >
+     	<div class="horizontal-centered">
+            <button type="button"class="btn btn-menu">Home</button>
+            <button type="button"class="btn btn-menu btn-selected">Aggiungi</button>
             <button type="button"class="btn btn-menu">Restituisci</button>
             <button type="button"class="btn btn-menu">Soci</button>
-            <div style="float:right;">
-            </div>
-            </div>
         </div>
+    </div>
 		<div id="contianer">
 			<form action="" method="post">
 					
@@ -37,9 +35,9 @@
 					<input type="text" name= "costo" placeholder="costo/giorno" 
 					onfocus="this.placeholder=''"  onblur="this.placeholder='costo/giorno'">
 								
-					<input type="submit" value="Registra" class ="btn btn-registra">
+					<input type="submit" value="Aggiungi" class ="btn btn-registra">
 			</form>
 		</div>
-		<div class="footer footer-registra"></div>
+		<div class="footer footer-registra">asdasdas</div>
 </body>
 </html>
