@@ -20,7 +20,7 @@
             </div>
         </div>
         <div id="container">
-           <p style ="font-size: 24px;">Ops!</br>Questo sito è ancora in sviluppo.</br>Avrai la possibile di noleggiare la tua auto preferita
+           <p style ="font-size: 24px;">Ops!</br>Questo sito è ancora in sviluppo.</br>Avrai la possibilità di noleggiare la tua auto preferita
            appena il sito web sarà online :)</p>
         </div>
         <div class="footer footer-registra">Realizzato da Dawid Grzelczyk e Domenico Ferraro</div>
