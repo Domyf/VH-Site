@@ -23,105 +23,29 @@
             </div>
         </div>
         <div class="page-content horizontal-centered">
-            <div class="car-item">
-                <img class="car-img" src="img/auto/DF486TY.jpg">
-                <div class="car-descr" style="text-align: center;">
-                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
-                    <div>Renault</div>
-                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
-                    <div>Clio</div>
-                    <div style="margin-top: 40px;">€25/giorno</div>
-                    <button type="button"class="btn btn-noleggia car-item-btn">Noleggia</button>
-                </div>
-            </div>
-            <div class="car-item">
-                <img class="car-img" src="img/auto/DF486TY.jpg">
-                <div class="car-descr" style="text-align: center;">
-                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
-                    <div>Renault</div>
-                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
-                    <div>Clio</div>
-                    <div style="margin-top: 40px;">€25/giorno</div>
-                    <button type="button"class="btn btn-noleggia car-item-btn">Noleggia</button>
-                </div>
-            </div>
-            <div class="car-item">
-                <img class="car-img" src="img/auto/DF486TY.jpg">
-                <div class="car-descr" style="text-align: center;">
-                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
-                    <div>Renault</div>
-                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
-                    <div>Clio</div>
-                    <div style="margin-top: 40px;">€25/giorno</div>
-                    <button type="button"class="btn btn-noleggia car-item-btn">Noleggia</button>
-                </div>
-            </div>
-            <div class="car-item">
-                <img class="car-img" src="img/auto/DF486TY.jpg">
-                <div class="car-descr" style="text-align: center;">
-                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
-                    <div>Renault</div>
-                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
-                    <div>Clio</div>
-                    <div style="margin-top: 40px;">€25/giorno</div>
-                    <button type="button"class="btn btn-noleggia car-item-btn">Noleggia</button>
-                </div>
-            </div>
-            <div class="car-item">
-                <img class="car-img" src="img/auto/DF486TY.jpg">
-                <div class="car-descr" style="text-align: center;">
-                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
-                    <div>Renault</div>
-                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
-                    <div>Clio</div>
-                    <div style="margin-top: 40px;">€25/giorno</div>
-                    <button type="button"class="btn btn-noleggia car-item-btn">Noleggia</button>
-                </div>
-            </div>
-            <div class="car-item">
-                <img class="car-img" src="img/auto/DF486TY.jpg">
-                <div class="car-descr" style="text-align: center;">
-                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
-                    <div>Renault</div>
-                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
-                    <div>Clio</div>
-                    <div style="margin-top: 40px;">€25/giorno</div>
-                    <button type="button"class="btn btn-noleggia car-item-btn">Noleggia</button>
-                </div>
-            </div>
-            <div class="car-item">
-                <img class="car-img" src="img/auto/DF486TY.jpg">
-                <div class="car-descr" style="text-align: center;">
-                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
-                    <div>Renault</div>
-                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
-                    <div>Clio</div>
-                    <div style="margin-top: 40px;">€25/giorno</div>
-                    <button type="button"class="btn btn-noleggia car-item-btn">Noleggia</button>
-                </div>
-            </div>
-            <div class="car-item">
-                <img class="car-img" src="img/auto/DF486TY.jpg">
-                <div class="car-descr" style="text-align: center;">
-                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
-                    <div>Renault</div>
-                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
-                    <div>Clio</div>
-                    <div style="margin-top: 40px;">€25/giorno</div>
-                    <button type="button"class="btn btn-noleggia car-item-btn">Noleggia</button>
-                </div>
-            </div>
-            <div class="car-item">
-                <img class="car-img" src="img/auto/DF486TY.jpg">
-                <div class="car-descr" style="text-align: center;">
-                    <div style="font-size: 12px; margin-top: 10px;">Marca</div>
-                    <div>Renault</div>
-                    <div style="font-size: 12px; margin-top: 10px;">Modello</div>
-                    <div>Clio</div>
-                    <div style="margin-top: 40px;">€25/giorno</div>
-                    <button type="button"class="btn btn-noleggia car-item-btn">Noleggia</button>
-                </div>
-            </div>
+        <?php
+            include 'connect.php';
+            //$sql = "SELECT * FROM Auto WHERE Targa IN (SELECT Auto FROM Noleggi WHERE AutoRestituita = 0);";
+            $sql = "SELECT * FROM Auto";
+            //$sql = 'SELECT * FROM Noleggi WHERE $codfiscale = socio AND ($utenteInizio >= inizio AND $utenteFine <= fine);';
+            //$sql = "UPDATE Noleggi SET autoRestituita = 1 WHERE Auto = $targa && Socio = $codiceFiscale";
+            //Eseguo la query
+            //$result = $conn->query($sql);
+            $result = mysqli_query($conn, $sql);
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    echo '<div class="car-item">'
+                    . '<img class="car-img" src="img/auto/'.$row["targa"].'.jpg">'
+                    . '<div class="car-descr" style="text-align: center;">'
+                    . '<div style="font-size: 12px; margin-top: 10px;">Marca</div>'
+                    . '<div>'.$row["marca"].'</div>'
+                    . '<div style="font-size: 12px; margin-top: 10px;">Modello</div>'
+                    . '<div>'.$row["modello"].'</div>'
+                    . '<div style="margin-top: 40px;">€'.$row["costo_giornaliero"].'/giorno.</div>'
+                    . '<button type="button"class="btn btn-noleggia car-item-btn">Noleggia</button></div></div>';
+                }
+            }
+        ?>
             <div style="clear:both;"></div>
         </div>
         <div class="footer"><div style="text-align: center;">Realizzato da Dawid e Domenico Ferraro</div></div>
