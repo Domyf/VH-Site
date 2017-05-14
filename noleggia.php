@@ -20,6 +20,14 @@
             </div>
         </div>
         <div id="container">
+            <?php
+                include 'connect.php';
+                $inizio = $_POST["start"];
+                $fine = $_POST["end"];
+                //QUERY C
+                //$sql = "INSERT INTO noleggi (`auto`, `socio`, `inizio`, `fine`, `auto_restituita`, `codice_noleggio`) VALUES ($targa, $codfis, $inizio, $fine,0, ,NULL)";
+                //$result = mysqli_query($conn, $sql);
+            ?>
            <p style ="font-size: 24px;">Auto noleggiata!</p>
         </div>
         <div class="footer footer-registra">Realizzato da Dawid Grzelczyk e Domenico Ferraro</div>
