@@ -19,7 +19,7 @@
             </div>
         </div>
         <div id="container">
-            <form action="" method="post">
+            <form action="restituzione.php" method="post">
                 <select name="Targa" placeholder="Targa">
                     <option disabled selected value>Scegli la targa</option>
                 <?php
