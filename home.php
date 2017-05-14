@@ -48,6 +48,6 @@
         ?>
             <div style="clear:both;"></div>
         </div>
-        <div class="footer"><div style="text-align: center;">Realizzato da Dawid e Domenico Ferraro</div></div>
+        <div class="footer"><div style="text-align: center;">Realizzato da Dawid Grzelczyk e Domenico Ferraro</div></div>
     </body>
 </html>
