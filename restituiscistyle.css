@@ -1,9 +1,9 @@
 body
 {
-	font-size: 20px;
+    font-size: 20px;
 }
 
-#contianer
+#container
 {
 	background-color: white;
 	width: 300px;
@@ -43,15 +43,15 @@ input[type=password]:focus
 		
 }
 
-.btn-registra
+.btn-restituisci
 {
-	color: white;
+    color: white;
     background-color: #43A047;
     height: 56px !important;
     width: 158px !important;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 68px !important;
-    font-size: 26px !important;
+    font-size: 24px !important;
 }
 
 .footer-registra

@@ -10,10 +10,10 @@
     <body>
         <div class="car-list-menu">
             <div class="horizontal-centered">
-            <button type="button"class="btn btn-menu btn-selected">Home</button>
-            <button type="button"class="btn btn-menu">Aggiungi</button>
-            <button type="button"class="btn btn-menu">Restituisci</button>
-            <button type="button"class="btn btn-menu">Soci</button>
+                <a href="home.php"><button type="button"class="btn btn-menu btn-selected">Home</button></a>
+                <a href="aggiungi.php"><button type="button"class="btn btn-menu">Aggiungi</button></a>
+                <a href="restituisci.php"><button type="button"class="btn btn-menu">Restituisci</button></a>
+                <a href="soci.php"><button type="button"class="btn btn-menu">Soci</button></a>
             <div style="float:right;">
                 <form style="margin-right: 10px; font-size: 18px;">Dal<input type="date" name="start" min="2000-01-02" class="datepicker">
                     Al<input type="date" name="end" min="2000-01-02" class="datepicker">
