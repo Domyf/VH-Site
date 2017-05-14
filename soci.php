@@ -38,14 +38,14 @@
                 </select>
                 
                 <div id = "data-input">
-	                Dal<input type="date" name="start" min="2000-01-01" class="datepicker"></br>
-	                Al<input type="date" name="end" min="2020-01-01" class="datepicker">
+	                Dal<input type="date" name="start" class="datepicker"></br>
+	                Al<input type="date" name="end" class="datepicker">
                 </div>
                                 
                 <input type="submit" value="Cerca" class="btn btn-restituisci">
             </form>
                 </div>
-                <div>
+                <div class="horizontal-centered" style="margin-top: 60px;">
                 <?php
 		            include 'connect.php';
 		            $result;
@@ -54,22 +54,28 @@
 		                $socio = $_POST["codicefiscale"];
 		                $inizio = $_POST["start"];
 		                $fine = $_POST["end"];
-		                $sql = "SELECT * FROM Noleggi WHERE socio=$socio 
-								AND (SELECT Auto FROM Noleggi WHERE ('$inizio' <= Inizio && '$inizio' >= Fine)";
+                                //QUERY B
+		                $sql = "SELECT * FROM Noleggi WHERE socio='$socio' AND '$inizio' >= Inizio && '$inizio' <= Fine AND '$fine' >= Inizio && '$fine' <= Fine";
 		                $result = mysqli_query($conn, $sql);
                                 if ($result->num_rows > 0) {
+                                    echo '<p style="text-align: center">Lista auto noleggiate nel periodo scelto</p>';
 		                    while($row = $result->fetch_assoc()) {
+                                        $sql2 = "SELECT * FROM Auto WHERE targa = '".$row["auto"]."'";
+                                        $result2 = mysqli_query($conn, $sql2);
+                                        $auto = $result2->fetch_assoc();
 		                        echo '<div class="car-item">'
-		                        . '<img class="car-img" src="img/auto/'.$row["targa"].'.jpg">'
+		                        . '<img class="car-img" src="img/auto/'.$auto["targa"].'.jpg">'
 		                        . '<div class="car-descr" style="text-align: center;">'
 		                        . '<div style="font-size: 12px; margin-top: 10px;">Marca</div>'
-		                        . '<div>'.$row["marca"].'</div>'
+		                        . '<div>'.$auto["marca"].'</div>'
 		                        . '<div style="font-size: 12px; margin-top: 10px;">Modello</div>'
-		                        . '<div>'.$row["modello"].'</div>'
-		                        . '<div style="margin-top: 40px;">€'.$row["costo_giornaliero"].'/giorno.</div>'
+		                        . '<div>'.$auto["modello"].'</div>'
+		                        . '<div style="margin-top: 40px;">€'.$auto["costo_giornaliero"].'/giorno.</div>'
 		                        . '<button type="button"class="btn btn-noleggia car-item-btn">Noleggia</button></div></div>';
 		                    }
-		                }
+		                } else {
+                                    echo '<p style="text-align: center">In questo periodo non è stata noleggiata alcuna auto</p>';
+                                }
 		            }
         		?>
         	</div>
