@@ -23,17 +23,11 @@
 		<div id="contianer">
 			<form action="" method="post">
 					
-					<input type="text" name= "marca" placeholder="marca" 
-					onfocus="this.placeholder=''"  onblur="this.placeholder='marca'">
-					
-					<input type="text" name= "modello" placeholder="modello" 
-					onfocus="this.placeholder=''"  onblur="this.placeholder='modello'">
-					
 					<input type="text" name= "targa" placeholder="targa" 
 					onfocus="this.placeholder=''"  onblur="this.placeholder='targa'">
 					
-					<input type="text" name= "costo" placeholder="costo/giorno" 
-					onfocus="this.placeholder=''"  onblur="this.placeholder='costo/giorno'">
+					<input type="text" name= "c. Fiscale" placeholder="c. Fiscale" 
+					onfocus="this.placeholder=''"  onblur="this.placeholder='c. Fiscale'">
 								
 					<input type="submit" value="Aggiungi" class ="btn btn-registra">
 			</form>
